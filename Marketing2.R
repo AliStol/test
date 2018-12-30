@@ -5,9 +5,9 @@ cust$age <- rnorm(n = ncust, mean = 35, sd = 5)
 cust$credit.score <- rnorm(n = ncust,  mean = 3+cust$age + 620, sd = 50)
 cust$email <- factor(sample(c("yes", "no"), size = ncust, replace = TRUE, prob = c(0.8, 0.2)))
 cust$dist <- exp(rnorm(n = ncust, mean = 2, sd = 1.2))
-summary(cust)
+#str(cust)
 tail(cust)
-
+# testy
 hist(cust$dist)
 
 cust$online_vis <- rnbinom(ncust, size = 0.3, 
